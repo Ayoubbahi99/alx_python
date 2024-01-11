@@ -1,3 +1,6 @@
 def convert_to_celsius(fahrenheit):
     celsius = (fahrenheit - 32) * 5/9
-    return '{:.2f}'.format(celsius)
+    if celsius < 0:
+        return '{:.2f}'.format(celsius)
+    else:
+        return celsius
