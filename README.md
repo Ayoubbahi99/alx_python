@@ -4,3 +4,4 @@ This project has seven tasks that will help me understand the basic of python an
 
 _ 0. Hello, print: Print "Programming is like building a multilingual puzzle"
 _1. Copy - Cut - Paste: print one letter or many letters from a word
+_2. Positive anything is better than negative nothing: check if the random number is positive, negative, or equal to zero.
