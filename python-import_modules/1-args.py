@@ -12,7 +12,7 @@ if __name__ == "__main__":
     argument.remove(argument[0])
 
     if count == 0:
-        print("{} arguments.".format(count))
+        print("{} argument.".format(count))
     elif count > 0:
         print("{} arguments:".format(count ))
         for j in range(len(argument)):
