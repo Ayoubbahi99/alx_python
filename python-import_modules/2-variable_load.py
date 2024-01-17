@@ -2,6 +2,6 @@
 
 
 if __name__ == "__main__":
-    from 2-variables_load.py import a
+    from variable_load_2 import a
 
     print(a)
