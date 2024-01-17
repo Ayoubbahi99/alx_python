@@ -4,7 +4,7 @@
 if __name__ == "__main__":
     import sys
 
-    count = len(sys.argv)
+    count = len(sys.argv) - 1
     argument = []
 
     for i in sys.argv:
