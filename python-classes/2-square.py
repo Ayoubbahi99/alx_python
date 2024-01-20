@@ -4,7 +4,7 @@
 
 class Square:
     """
-    Class that defines properties of square by: (based on 0-square.py).
+    Class that defines properties of square by: (based on 1-square.py).
 
     Attributes:
         size: size of a square (1 side).
@@ -23,3 +23,8 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
+    
+    def area(self):
+        """Public instance method, that returns the current square area."""
+        return self.__size ** 2
