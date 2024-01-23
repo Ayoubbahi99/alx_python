@@ -1,14 +1,14 @@
 #!/usr/bin/python3
+"""Defines a class BaseGeometry based on 5-base_geometry.py"""
 
-"""An empty class BaseGeometry."""
+
 class BaseGeometry:
-    """Class that defines properties of square by: (based on 3-base_geometry.py).
+    """Class BaseGeometry.
     """
-    
     def area(self):
-        """Raise an exception with the message 'area() is not implemented.'
+        """Area function.
 
         Raises:
-            Exception: Always raises an exception with the message 'area() is not implemented.'
+            Exception: if area is not implemented.
         """
         raise Exception("area() is not implemented")
