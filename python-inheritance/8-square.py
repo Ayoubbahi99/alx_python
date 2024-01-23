@@ -7,14 +7,13 @@ Rectangle = __import__('7-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Class Square.
-    """
+    """Class representing a square."""
 
     def __init__(self, size):
-        """Initialize a square instance.
+        """Initialize a Square instance.
 
         Args:
             size (int): The size of the square.
         """
-        self.integer_validator("width", size)
-        self.__size = size
+        self.integer_validator("size", size)
+        super().__init__(size, size)
