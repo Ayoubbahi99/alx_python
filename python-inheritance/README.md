@@ -18,3 +18,6 @@ _ 2. Only sub class of
 
     * Prototype: def inherits_from(obj, a_class):
     * You are not allowed to import any module
+_ 3. Geometry module
+    * Write an empty class BaseGeometry.
+        *You are not allowed to import any module
