@@ -46,7 +46,7 @@ class Rectangle(Base):
     
     """setter method for height."""
     @height.setter
-    def width(self, height):
+    def height(self, height):
         """set the height of a new value."""
         self.__height = height
     
@@ -70,6 +70,7 @@ class Rectangle(Base):
 
     """setter method for y."""
     @y.setter
-    def width(self, y):
+    def y(self, y):
         """set the y value to a new one."""
         self.__y = y
+
