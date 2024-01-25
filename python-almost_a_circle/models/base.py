@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
+"""Identify Class Base"""
 class Base:
     """Class that defines properties of Base.
 
      Attributes:
-        id (int): Identity of each instance.
+        __nb_objects (int): numbers of objects or each object.
     """
     __nb_objects = 0
 
