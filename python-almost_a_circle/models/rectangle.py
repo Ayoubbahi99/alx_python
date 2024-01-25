@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """Import Base class from the base file"""
-Base = __import__('base').Base
+from models.base import Base
 
 """Defines a class Rectangle based on base.py"""
 class Rectangle(Base):    
