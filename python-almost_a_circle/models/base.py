@@ -1,20 +1,21 @@
 #!/usr/bin/python3
 
-"""Defines a class Base"""
 class Base:
-    __nb_objects = 0 # Private class attribute to keep track of the number of instances
+    """Class that defines properties of Base.
 
-    """Check if id is not None to assign the argument of the object to ID
-        Or  increment __nb_objects and assign it to ID
+     Attributes:
+        id (int): Identity of each instance.
     """
+    __nb_objects = 0
+
     def __init__(self, id=None):
         """Creates new instances of Base.
 
         Args:
-            size: id of the Base.
+            id (int, optional): Identity of each instance. Defaults to None.
         """
-        if id != None:
+        if id is not None:
             self.id = id
         else:
-            self.__nb_objects += 1
-            self.id = self.__nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
