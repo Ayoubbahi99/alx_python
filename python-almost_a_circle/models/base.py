@@ -15,7 +15,9 @@ class Base:
             id (int, optional): Identity of each instance. Defaults to None.
         """
         if id is not None:
+            # If an ID is provided, use it
             self.id = id
         else:
+            # If no ID is provided, increment __nb_objects and assign the new value to the instance's ID
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
