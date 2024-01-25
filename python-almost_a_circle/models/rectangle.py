@@ -4,7 +4,11 @@
 from models.base import Base
 
 """Defines a class Rectangle based on base.py"""
-class Rectangle(Base):    
+class Rectangle(Base):
+    """Defines a class Rectangle inherit from base.py file class Base
+        create methods for all the instance attributes 
+    """
+  
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Creates new instances of Rectangle.
