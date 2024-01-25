@@ -2,7 +2,7 @@
 
 """Defines a class Base"""
 class Base:
-    __nb_objects = 0
+    __nb_objects = 0 # Private class attribute to keep track of the number of instances
 
     """Check if id is not None to assign the argument of the object to ID
         Or  increment __nb_objects and assign it to ID
