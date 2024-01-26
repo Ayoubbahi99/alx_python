@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 """Import Rectangle class from rectangle file"""
+
+
+
 from rectangle import Rectangle
 
+"""Square Class"""
 class Square(Rectangle):
     """The Square class inherits from the Rectangle class
 
@@ -14,7 +18,7 @@ class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         """"Constructor for the Square class
-            Get them all from Rectangle Class
+            Get them(Properties) all from Rectangle Class
         Args:
             width (int): width of rectangle.
             height (int): height of rectangle.
@@ -25,7 +29,9 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """String representation of the Square object
-        Displays information about the Square, including its ID, position, and size
+        """Print info of a Square.
+
+        Returns:
+            print id, x, y, width, and height of each rectangle.
         """
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.__width}"
