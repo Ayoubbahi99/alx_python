@@ -34,4 +34,4 @@ class Square(Rectangle):
         Returns:
             print id, x, y, width, and height of each rectangle.
         """
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.__width}"
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
