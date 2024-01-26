@@ -3,12 +3,24 @@
 from rectangle import Rectangle
 
 class Square(Rectangle):
-    """The Square class inherits from the Rectangle class""" 
+    """The Square class inherits from the Rectangle class
+
+     Attributes:
+        width (int): width of rectangle.
+        height (int): height of rectangle.
+        x (int): x.
+        y (int): y.   
+    """ 
 
     def __init__(self, size, x=0, y=0, id=None):
         """"Constructor for the Square class
-             Calls the constructor of the base class (Rectangle) with the provided arguments
-             Size is used for both width and height since Square has equal sides
+            Get them all from Rectangle Class
+        Args:
+            width (int): width of rectangle.
+            height (int): height of rectangle.
+            x (int, optional): x. Defaults to 0.
+            y (int, optional): y. Defaults to 0.
+            id (int, optional): Identity number of rectangle. Defaults to None.
         """
         super().__init__(size, size, x, y, id)
 
