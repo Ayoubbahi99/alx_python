@@ -3,7 +3,7 @@
 
 
 
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 
 """Square Class"""
 class Square(Rectangle):
