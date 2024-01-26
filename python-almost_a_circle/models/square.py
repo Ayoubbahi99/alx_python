@@ -29,9 +29,6 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """Print info of a Square.
-
-        Returns:
-            print id, x, y, width, and height of each rectangle.
-        """
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
+        """Prints square"""
+        return ("[Square] ({}) {:d}/{:d} - {:d}".
+                format(self.id, self.x, self.y, self.size))
