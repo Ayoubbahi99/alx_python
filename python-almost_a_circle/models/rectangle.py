@@ -145,16 +145,18 @@ class Rectangle(Base):
     
 
     def display(self):
-        """Print a rectangle.
-
-        Returns:
-            Rectangle with the help of two loops.
-        """
+        """Prints in stdout the Rectangle instance with the character #."""
+        if self.__y > 0:
+            for i in range(self.__y):
+                print()
+            self.__y = 0
         for i in range(self.__height):
             for j in range(self.__width):
+                if self.__y == j:
+                    print(" " * self.__x, end="")
                 print("#", end="")
             print()
-
+            
     def __str__(self):
         """Print info of a rectangle.
 
