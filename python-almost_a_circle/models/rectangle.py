@@ -142,3 +142,15 @@ class Rectangle(Base):
             int: area.
         """
         return self.__width * self.__height
+    
+
+    def display(self):
+        """Print a rectangle.
+
+        Returns:
+            Rectangle with the help of two loops.
+        """
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print("#", end="")
+        print()

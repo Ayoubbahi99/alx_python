@@ -36,3 +36,5 @@ _ 2. Validate attributes
 
 _ 3. Area first
     * Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.
+_ 4. Display #0
+    * Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here.
