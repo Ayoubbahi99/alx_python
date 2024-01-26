@@ -165,29 +165,20 @@ class Rectangle(Base):
         """
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.__width}/{self.__height}"
     
-    def update(self, *args):
-        """Update info of a rectangle.
+    def update(self, *args, **kwargs):
+        """Assigns an argument to each attribute
 
-        Returns:
-            Update the info of a rectangle depending pn how many arguments the user will give us.
-        """        
-        if len(args) == 1:
-            self.id = args[0]
-        elif len(args) == 2:
-            self.id == args[0]
-            self.__width = args[1]
-        elif len(args) == 3:
-            self.id == args[0]
-            self.__width = args[1]
-            self.__height = args[2]
-        elif len(args) == 4:
-            self.id == args[0]
-            self.__width = args[1]
-            self.__height = args[2]
-            self.x = args[3]
-        elif len(args) == 5:
-            self.id == args[0]
-            self.__width = args[1]
-            self.__height = args[2]
-            self.x = args[3]
-            self.y = args[4]
+        Args:
+            *args (tuple): arguments.
+            **kwargs (dict): double pointer to a dictionary.
+        """
+
+        # print("args {}".format(type(args)))
+        # print("kwargs {}".format(type(kwargs)))
+        if args is not None and len(args) is not 0:
+            list_arr = ['id', 'width', 'height', 'x', 'y']
+            for i in range(len(args)):
+                setattr(self, list_arr[i], args[i])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
