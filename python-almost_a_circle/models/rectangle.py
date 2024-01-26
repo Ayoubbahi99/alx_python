@@ -156,7 +156,7 @@ class Rectangle(Base):
                     print(" " * self.__x, end="")
                 print("#", end="")
             print()
-            
+
     def __str__(self):
         """Print info of a rectangle.
 
@@ -164,3 +164,25 @@ class Rectangle(Base):
             print id, x, y, width, and height of each rectangle.
         """
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.__width}/{self.__height}"
+    
+    def update(self, *args):
+        if len(args) == 1:
+            self.id = args[0]
+        elif len(args) == 2:
+            self.id == args[0]
+            self.__width = args[1]
+        elif len(args) == 3:
+            self.id == args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+        elif len(args) == 4:
+            self.id == args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.x = args[3]
+        elif len(args) == 5:
+            self.id == args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.x = args[3]
+            self.y = args[4]
