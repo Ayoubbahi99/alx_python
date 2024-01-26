@@ -35,7 +35,16 @@ class Rectangle(Base):
     """setter method for width."""   
     @width.setter
     def width(self, width):
-        """set width of rectangle to a new one."""
+        """set width of rectangle to a new one.
+            
+            Raises:
+            TypeError: If the value is not an integer.
+            ValueError: If the value is less than 0.
+        """
+        if not isinstance(width, int):
+            raise TypeError("{} must be an integer".format(width))
+        if width < 0:
+            raise ValueError("{} must be greater than 0".format(width))
         self.__width = width
     
     """Getter method for height."""
@@ -47,7 +56,16 @@ class Rectangle(Base):
     """setter method for height."""
     @height.setter
     def height(self, height):
-        """set the height of a new value."""
+        """set the height of a new value.
+            
+            Raises:
+            TypeError: If the value is not an integer.
+            ValueError: If the value is less than 0.
+        """
+        if not isinstance(height, int):
+            raise TypeError("{} must be an integer".format(height))
+        if height < 0:
+            raise ValueError("{} must be greater than 0".format(height))
         self.__height = height
     
     """Getter method for x."""
@@ -59,7 +77,16 @@ class Rectangle(Base):
     """setter method for x."""
     @x.setter
     def x(self, x):
-        """set the x value to a new one."""
+        """set the x value to a new one.
+            
+            Raises:
+            TypeError: If the value is not an integer.
+            ValueError: If the value is less than or equal to 0.
+        """
+        if not isinstance(x, int):
+            raise TypeError("{} must be an integer".format(x))
+        if x <= 0:
+            raise ValueError("{} must be greater than 0".format(x))        
         self.__x = x
 
     """Getter method for y."""
@@ -71,6 +98,15 @@ class Rectangle(Base):
     """setter method for y."""
     @y.setter
     def y(self, y):
-        """set the y value to a new one."""
+        """set the y value to a new one.
+
+            Raises:
+            TypeError: If the value is not an integer.
+            ValueError: If the value is less than or equal to 0.
+        """
+        if not isinstance(y, int):
+            raise TypeError("{} must be an integer".format(y))
+        if y <= 0:
+            raise ValueError("{} must be greater than 0".format(y))
         self.__y = y
 
