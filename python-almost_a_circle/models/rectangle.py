@@ -154,3 +154,11 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """Print info of a rectangle.
+
+        Returns:
+            print id, x, y, width, and height of each rectangle.
+        """
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.__width}/{self.__height}"
