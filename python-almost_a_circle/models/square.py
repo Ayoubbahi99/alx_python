@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """Import Rectangle class from rectangle file"""
 
-
-
 from models.rectangle import Rectangle
 
 """Square Class"""
@@ -32,3 +30,29 @@ class Square(Rectangle):
         """Prints square"""
         return ("[Square] ({}) {:d}/{:d} - {:d}".
                 format(self.id, self.x, self.y, self.size))
+    
+    @property
+    def size(self):
+        """Property retriever for size.
+
+        Returns:
+            int: size of one side of square.
+        """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """Property setter for width of square.
+        Args:
+            value (int): width of square.
+        Raises:
+            TypeError: if width is not an integer.
+            ValueError: if width is less than or equal to zero.
+        """
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        
+        self.width = value
+        self.height = value
