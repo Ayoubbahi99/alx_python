@@ -12,4 +12,4 @@ code = r.status_code
 if code > 400:
     print(f"Error code: {code}")
 else:
-    print("index")
+    print(r.text)
